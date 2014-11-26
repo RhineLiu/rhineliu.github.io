@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<meta name="viewport" content="width=device-width,height=device-height; initial-scale=1.0; maximum-scale=1.0; user-scalable=no;"/>
+	<title>Rhine.is.me</title>
+	<link rel="stylesheet" href="css/home.css">
+	<link rel="stylesheet" href="css/idangerous.swiper.css">
+	<link rel="stylesheet" href="css/swiper.css">
+	<script src="js/isMobile.js"></script>
+	<script>
+		if (!isMobile.any()) window.location.href = "index.html";
+	</script>
+</head>
+<body>
+<div class="swiper-container">
+	<div class="swiper-wrapper">
+		<div class="swiper-slide blue-slide kitty">
+			<header class="">Rhine.Is.Me</header>
+		</div>
+		<div class="swiper-slide red-slide">
+			<div class="title">Slide 2</div>
+			<p>Keep scrolling</p>
+		</div>
+		<div class="swiper-slide orange-slide">
+			<div class="title">Slide 3</div>
+			<p>Keep scrolling</p>
+		</div>
+		<div class="swiper-slide green-slide">
+			<div class="title">Slide 4</div>
+			<p>Keep scrolling</p>
+		</div>
+		<div class="swiper-slide pink-slide">
+			<div class="title">Slide 5</div>
+			<p>The bottom</p>
+			<footer class="cp pa">+ Like Me(0)</footer>
+		</div>
+	</div>
+	<div class="pagination"></div>
+</div>
+<script src="js/jquery-1.10.2.min.js"></script>
+<script src="js/idangerous.swiper.min.js"></script>
+<script>
+	var mySwiper = new Swiper('.swiper-container',{
+		pagination: '.pagination',
+//		paginationClickable: true,
+		mode: 'vertical'
+	});
+</script>
+</body>
+</html>
